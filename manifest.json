@@ -1,0 +1,14 @@
+   {
+      "name": "send_mails",
+	  "permissions": ["storage"],
+      "version": "1.0",
+	  
+      "manifest_version": 2,
+      "content_scripts": [
+        {
+		  "matches": ["https://mail.google.com/mail/*"],
+          "js": ["jquery-3.6.0.min.js", "content.js"]
+        }
+      ]
+    }
+	
